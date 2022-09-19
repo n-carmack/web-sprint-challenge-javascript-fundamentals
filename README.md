@@ -25,15 +25,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-
+ .map allows you to create a new array without changing anything with the original. This could be used when creating another array with data pulled from the original, and some changes to allow both arrays to be accesible.
+ .reduce returns a single value, essentially reducing the input into a single value based on the given criteria, such as a sum total of populations in the countries found in an array.
+ .filter adds data that meets a boolean criteria into a new array, such as making an array of which countries have populations above 5 million.
 2. Explain the difference between a callback and a higher order function.
-
+ A higher order function is one that uses another function as an argument, while the callback function is one that is used as an argument by a higher order function.
 3. Explain what a closure is.
-
+A closure is when a variable outside of the scope of a function is called into it.
 4. Describe the four principles of the 'this' keyword.
-
+Window Binding:  If you don't provide context for what 'this' is, then it will call a global object or be undefined if there isn't one.
+Implicit Binding: 'This' refers to the object left of the dot in the function being used.
+Explicit Binding: Using call apply or bind to state what 'this' is.
+New Binding: When using the new keyword 'this' will refer to the newly created object.
 5. Why do we need super() in an extended class?
-
+super() is used to call the constructor of the parent class. Without it we wouldn't be able to inherent everything that we want to the child class.
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
